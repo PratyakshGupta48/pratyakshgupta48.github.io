@@ -1,26 +1,13 @@
-# dotwallet-site
+# pratyakshgupta48.github.io
 
-Static site for **wallet.dotwallet.app**:
+GitHub Pages **user site** for DOT Wallet:
 
-- `/.well-known/apple-app-site-association` — passkey `webcredentials` for `RZMA2C6H3N.com.dotwallet.app`
-- `/privacy.html` — privacy policy for App Store Connect
-- GitHub Pages + custom domain `wallet.dotwallet.app`
+- `https://pratyakshgupta48.github.io/.well-known/apple-app-site-association` — passkey `webcredentials` for App ID `RZMA2C6H3N.com.dotwallet.app`
+- `https://pratyakshgupta48.github.io/privacy.html` — privacy policy
+- Relying party ID: `pratyakshgupta48.github.io` (Public Suffix List–safe user site)
 
-DNS (GoDaddy): `CNAME` name `wallet` → `pratyakshgupta48.github.io`.
+No custom domain. Not affiliated with Polkadot’s DOT ticker.
 
-Not affiliated with Polkadot’s DOT ticker.
+## Content-Type
 
-## Content-Type caveat (GitHub Pages)
-
-GitHub Pages serves the extensionless AASA as `Content-Type: application/octet-stream`
-(verified). Apple’s docs prefer `application/json`. Many teams still succeed with
-`webcredentials` on Pages; if Apple’s CDN rejects the file, move the same repo to
-**Cloudflare Pages** (free) which honors the `_headers` file above.
-
-## DNS (GoDaddy)
-
-| Type | Name | Value | TTL |
-|------|------|-------|-----|
-| CNAME | `wallet` | `pratyakshgupta48.github.io` | Default |
-
-Do **not** put a proxy/orange-cloud challenge in front of the AASA path if you later use Cloudflare DNS.
+GitHub Pages serves the extensionless AASA as `application/octet-stream`. See serene-wallet `docs/Apple-Setup.md`. `_headers` is kept for an optional Cloudflare Pages migrate.
