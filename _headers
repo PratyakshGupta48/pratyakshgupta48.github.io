@@ -1,0 +1,6 @@
+# Used if this site is later deployed to Cloudflare Pages / Netlify.
+# GitHub Pages ignores this file and serves extensionless AASA as application/octet-stream.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+/apple-app-site-association
+  Content-Type: application/json
